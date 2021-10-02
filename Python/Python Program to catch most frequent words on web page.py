@@ -1,3 +1,6 @@
+#created by Fanny Arif
+#fixing bug and update fiture
+
 
 import requests 
 from bs4 import BeautifulSoup 
@@ -14,6 +17,7 @@ def start(url):
 	wordlist = [] 
 	source_code = requests.get(url).text 
 
+	
 	# BeautifulSoup object which will 
 	# ping the requested url for data 
 	soup = BeautifulSoup(source_code, 'html.parser') 
